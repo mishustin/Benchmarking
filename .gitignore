@@ -1,0 +1,6 @@
+/packages
+/.vs
+/ConsoleApp6.sln.DotSettings.user
+/Mishustin.Benchmarking/bin
+/Mishustin.Benchmarking/obj
+/*.user
