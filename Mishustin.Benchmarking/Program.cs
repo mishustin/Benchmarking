@@ -1,5 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
-using Mishustin.Benchmarking.DateTime;
+using Mishustin.Benchmarking.PropertyAndField;
 
 namespace Mishustin.Benchmarking
 {
@@ -7,7 +7,7 @@ namespace Mishustin.Benchmarking
 	{
 		static void Main(string[] args)
 		{
-			BenchmarkRunner.Run<Now>();
+			BenchmarkRunner.Run<PropertyVsField>();
 		}
 	}
 }
