@@ -1,5 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 using Mishustin.Benchmarking.PropertyAndField;
+using Mishustin.Benchmarking.TaskAndValueTask;
 
 namespace Mishustin.Benchmarking
 {
@@ -7,7 +8,7 @@ namespace Mishustin.Benchmarking
 	{
 		static void Main(string[] args)
 		{
-			BenchmarkRunner.Run<PropertyVsField>();
+			BenchmarkRunner.Run<TaskVsValueTask>();
 		}
 	}
 }

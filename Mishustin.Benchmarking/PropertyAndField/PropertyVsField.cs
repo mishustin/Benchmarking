@@ -1,9 +1,10 @@
 ﻿using System;
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 
 namespace Mishustin.Benchmarking.PropertyAndField
 {
-	[ClrJob(true)]
+	[SimpleJob(RuntimeMoniker.Net48)]
 	public class PropertyVsField
 	{
 		//int

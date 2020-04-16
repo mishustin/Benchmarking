@@ -1,9 +1,10 @@
 ﻿using System.Diagnostics;
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 
 namespace Mishustin.Benchmarking.DateTime
 {
-	[ClrJob(true)]
+	[SimpleJob(RuntimeMoniker.Net48)]
 	public class Now
 	{
 		private System.DateTime _time = new System.DateTime(2019, 09, 08);

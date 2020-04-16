@@ -1,8 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 
 namespace Mishustin.Benchmarking.Array
 {
-	[ClrJob(true)]
+	[SimpleJob(RuntimeMoniker.Net48)]
 	public class Init2DArray
 	{
 		[Params(10, 100, 1000)]

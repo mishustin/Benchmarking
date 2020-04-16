@@ -1,9 +1,10 @@
 ﻿using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 
 namespace Mishustin.Benchmarking.Array
 {
-	[ClrJob(true)]
+	[SimpleJob(RuntimeMoniker.Net48)]
 	public class FillArray
 	{
 		[Params(100, 1000, 5000)]
