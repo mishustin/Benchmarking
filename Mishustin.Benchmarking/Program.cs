@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Running;
-using Mishustin.Benchmarking.PropertyAndField;
 using Mishustin.Benchmarking.TaskAndValueTask;
 
 namespace Mishustin.Benchmarking
