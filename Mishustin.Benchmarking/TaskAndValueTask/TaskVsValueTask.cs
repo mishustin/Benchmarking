@@ -8,19 +8,10 @@ namespace Mishustin.Benchmarking.TaskAndValueTask
 	[SimpleJob(RuntimeMoniker.Net48)]
 	public class TaskVsValueTask
 	{
-		[Params(100, 1000)]
+		[Params(50, 100)]
 		public int N { get; set; }
 
-		[Benchmark]
-		public void TaskMethod()
-		{
-			for (var i = 0; i < N; i++)
-			{
-				var r = TestTask();
-			}
-		}
-
-		[Benchmark]
+		[Benchmark(Description = "Task Await", Baseline = true)]
 		public async Task TaskMethodAsync()
 		{
 			for (var i = 0; i < N; i++)
@@ -29,16 +20,7 @@ namespace Mishustin.Benchmarking.TaskAndValueTask
 			}
 		}
 
-		[Benchmark]
-		public void ValueTaskMethod()
-		{
-			for (var i = 0; i < N; i++)
-			{
-				var r = TestValueTask();
-			}
-		}
-
-		[Benchmark]
+		[Benchmark(Description = "ValueTask Await")]
 		public async Task ValueTaskMethodAsync()
 		{
 			for (var i = 0; i < N; i++)
@@ -47,21 +29,21 @@ namespace Mishustin.Benchmarking.TaskAndValueTask
 			}
 		}
 
-		[Benchmark]
-		public void ValueTaskAsTaskMethod()
-		{
-			for (var i = 0; i < N; i++)
-			{
-				var r = TestValueTask().AsTask();
-			}
-		}
-
-		[Benchmark]
+		[Benchmark(Description = "ValueTask AsTask Await")]
 		public async Task ValueTaskAsTaskMethodAsync()
 		{
 			for (var i = 0; i < N; i++)
 			{
 				var r = await TestValueTask().AsTask();
+			}
+		}
+
+		[Benchmark(Description = "ValueTask Preserve Await")]
+		public async Task ValueTaskPreserveMethodAsync()
+		{
+			for (var i = 0; i < N; i++)
+			{
+				var r = await TestValueTask().Preserve();
 			}
 		}
 
