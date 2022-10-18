@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace Mishustin.Benchmarking.Array
+namespace NetFramework.Benchmarking.Array
 {
 	[SimpleJob(RuntimeMoniker.Net48)]
 	public class Init2DArray

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking", "Mishustin.Benchmarking\Benchmarking.csproj", "{A518BACA-E37E-487E-BE9C-2862458B0ABC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking", "NetFramework.Benchmarking\Benchmarking.csproj", "{A518BACA-E37E-487E-BE9C-2862458B0ABC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

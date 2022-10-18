@@ -8,8 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A518BACA-E37E-487E-BE9C-2862458B0ABC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Mishustin.Benchmarking</RootNamespace>
-    <AssemblyName>Mishustin.Benchmarking</AssemblyName>
+    <RootNamespace>NetFramework.Benchmarking</RootNamespace>
+    <AssemblyName>NetFramework.Benchmarking</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,7 +1,7 @@
 /packages
 /.vs
 /ConsoleApp6.sln.DotSettings.user
-/Mishustin.Benchmarking/bin
-/Mishustin.Benchmarking/obj
+/NetFramework.Benchmarking/bin
+/NetFramework.Benchmarking/obj
 /*.user
 *.TMP

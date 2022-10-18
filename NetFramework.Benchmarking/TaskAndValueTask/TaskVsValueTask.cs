@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace Mishustin.Benchmarking.TaskAndValueTask
+namespace NetFramework.Benchmarking.TaskAndValueTask
 {
 	[MemoryDiagnoser]
 	[SimpleJob(RuntimeMoniker.Net48)]

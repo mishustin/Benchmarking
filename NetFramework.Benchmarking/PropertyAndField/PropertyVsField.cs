@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace Mishustin.Benchmarking.PropertyAndField
+namespace NetFramework.Benchmarking.PropertyAndField
 {
 	[SimpleJob(RuntimeMoniker.Net48)]
 	public class PropertyVsField

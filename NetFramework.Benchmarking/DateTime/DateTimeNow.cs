@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace Mishustin.Benchmarking.DateTime
+namespace NetFramework.Benchmarking.DateTime
 {
 	[SimpleJob(RuntimeMoniker.Net48)]
 	public class Now

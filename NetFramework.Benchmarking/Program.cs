@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
-using Mishustin.Benchmarking.TaskAndValueTask;
+using NetFramework.Benchmarking.TaskAndValueTask;
 
-namespace Mishustin.Benchmarking
+namespace NetFramework.Benchmarking
 {
 	class Program
 	{
