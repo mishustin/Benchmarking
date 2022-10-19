@@ -1,5 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 using NetCore.Benchmarking.DateTime;
+using NetCore.Benchmarking.Stackalloc;
 using NetCore.Benchmarking.TaskAndValueTask;
 
 namespace NetCore.Benchmarking
@@ -8,7 +9,7 @@ namespace NetCore.Benchmarking
 	{
 		static void Main(string[] args)
 		{
-			BenchmarkRunner.Run<Now>();
+			BenchmarkRunner.Run<CreateStackalloc>();
 		}
 	}
 }

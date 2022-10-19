@@ -3,7 +3,7 @@ using BenchmarkDotNet.Jobs;
 
 namespace NetCore.Benchmarking.Array
 {
-	[SimpleJob(RuntimeMoniker.Net48)]
+	[SimpleJob(RuntimeMoniker.HostProcess)]
 	public class Init2DArray
 	{
 		[Params(10, 100, 1000)]

@@ -4,7 +4,7 @@ using BenchmarkDotNet.Jobs;
 namespace NetCore.Benchmarking.TaskAndValueTask
 {
 	[MemoryDiagnoser]
-	[SimpleJob(RuntimeMoniker.Net48)]
+	[SimpleJob(RuntimeMoniker.HostProcess)]
 	public class TaskVsValueTask
 	{
 		[Params(50, 100)]

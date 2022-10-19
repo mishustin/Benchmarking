@@ -3,7 +3,7 @@ using BenchmarkDotNet.Jobs;
 
 namespace NetCore.Benchmarking.PropertyAndField
 {
-	[SimpleJob(RuntimeMoniker.Net48)]
+	[SimpleJob(RuntimeMoniker.HostProcess)]
 	public class PropertyVsField
 	{
 		//int
