@@ -1,8 +1,7 @@
-﻿using System;
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace NetFramework.Benchmarking.PropertyAndField
+namespace NetCore.Benchmarking.PropertyAndField
 {
 	[SimpleJob(RuntimeMoniker.Net48)]
 	public class PropertyVsField

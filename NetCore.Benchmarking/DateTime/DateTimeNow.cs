@@ -2,12 +2,12 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace NetFramework.Benchmarking.DateTime
+namespace NetCore.Benchmarking.DateTime
 {
-	[SimpleJob(RuntimeMoniker.Net48)]
+	[SimpleJob(RuntimeMoniker.HostProcess)]
 	public class Now
 	{
-		private System.DateTime _time = new System.DateTime(2019, 09, 08);
+		private readonly System.DateTime _time = new(2019, 09, 08);
 
 		[Benchmark]
 		public void DateTimeNow()

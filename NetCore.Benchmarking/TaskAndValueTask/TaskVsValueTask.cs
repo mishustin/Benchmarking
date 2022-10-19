@@ -1,8 +1,7 @@
-﻿using System.Threading.Tasks;
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace NetFramework.Benchmarking.TaskAndValueTask
+namespace NetCore.Benchmarking.TaskAndValueTask
 {
 	[MemoryDiagnoser]
 	[SimpleJob(RuntimeMoniker.Net48)]

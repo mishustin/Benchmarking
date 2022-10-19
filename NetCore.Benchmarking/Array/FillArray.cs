@@ -1,8 +1,7 @@
-﻿using System.Threading.Tasks;
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
-namespace NetFramework.Benchmarking.Array
+namespace NetCore.Benchmarking.Array
 {
 	[SimpleJob(RuntimeMoniker.Net48)]
 	public class FillArray
