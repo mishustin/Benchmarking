@@ -12,22 +12,22 @@ namespace NetCore.Benchmarking.DateTime
 		[Benchmark]
 		public void DateTimeNow()
 		{
-			var r = System.DateTime.Now;
+			var now = System.DateTime.Now;
 		}
 
 		[Benchmark]
 		public void DateTimeUtcNow()
 		{
-			var r = System.DateTime.UtcNow;
+			var now = System.DateTime.UtcNow;
 		}
 
 		[Benchmark]
 		public void TimeSpan()
 		{
-			var t1 = Stopwatch.GetTimestamp();
-			var t2 = Stopwatch.GetTimestamp();
-			var r1 = (t2 - t1) / Stopwatch.Frequency;
-			var r2 = _time.AddSeconds(r1);
+			var time1 = Stopwatch.GetTimestamp();
+			var time2 = Stopwatch.GetTimestamp();
+			var span = (time2 - time1) / Stopwatch.Frequency;
+			var time = _time.AddSeconds(span);
 		}
 	}
 }
